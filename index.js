@@ -86,10 +86,10 @@ const submitForm = (event) => {
 
     // getting the data from the html elements:
 
-    const Name = document.getElementById("Name").value;
-    const Email = document.getElementById("Email").value;
-    const Password = document.getElementById("Password").value;
-    const DOB = document.getElementById("DOB").value;
+    const Name = document.getElementById("name").value;
+    const Email = document.getElementById("email").value;
+    const Password = document.getElementById("password").value;
+    const DOB = document.getElementById("dob").value;
 
     const TermsAndCondition = document.getElementById("TermsAndCondition").checked;
 
