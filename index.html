@@ -7,45 +7,45 @@
 
     <link rel="stylesheet" href="./output.css">
 </head>
-<body class="h-[100vh]  w-[100vw] flex flex-col items-center justify-center">
+<body class=" w-[100vw] flex flex-col items-center justify-center">
     
 
 
         <!-- THIS DIV WRAPS AROUND THE FORM -->
         <div id="formWrapper" class="w-3/5 h-3/5 bg-red-600 flex flex-col items-center justify-center">
-            <form action="">
+            <form action="" id="inputForm">
 
-                <!--  -->
+                <!-- NAME -->
                 <div class=" flex px-4 py-4 justify-center">
                     <label class="px-1 py-1 mx-4 text-3xl" for="Name">Name</label>
-                    <input class="px-1 py-1 text-xl" required type="text" name="userName" id="Name">
+                    <input class="px-1 py-1 text-3xl w-3/5" required type="text" name="userName" id="Name">
                 </div>
 
-                <!--  -->
+                <!-- EMAIL -->
                 <div class="flex px-4 py-4 justify-center">
                     <label for="Email">Email</label>
                     <input type="email" name="userEmail" id="Email">
                 </div>
 
-                <!--  -->
+                <!-- PASSWORD -->
                 <div class="flex px-4 py-4 justify-center">
                     <label for="Password">Password</label>
                     <input type="password" name="userPassword" id="Password">
                 </div>
 
-                <!--  -->
+                <!-- DATE OF BIRTH -->
                 <div class="flex px-4 py-4 justify-center">
-                    <label for="DOB">Date </label>
+                    <label for="DOB">Date Of Birth</label>
                     <input type="date" name="userDOB" id="DOB">
                 </div>
 
-                <!--  -->
+                <!-- CHECK BOX -->
                 <div class="flex px-4 py-4 justify-center">
                     <label for="TermsAndCondition"></label>
                     <input type="checkbox" name="userT&C" id="TermsAndCondition">
                 </div>
                 
-                <!--  -->
+                <!-- SUBMIT BUTTON -->
                 <div class="flex px-4 py-4 justify-center">
                     <button type="submit">Submit</button>
                 </div>
@@ -53,10 +53,26 @@
 
 
             </form>
+            <button onclick="ResetLocalStorage()">Reset</button>
 
 
         </div>
+        <div>
+            <h1 class="text-4xl py-8 text-center">This is the table</h1>
+            <div id="showUserEntries"></div>
 
+        </div>
+
+        <script src="./index.js"></script>
     
 </body>
 </html>
+
+<!-- <table>
+    <th>NAME</th>
+    <th>EMAIL</th>
+    <th>PASSWORD</th>
+    <th>DOB</th>
+    <th>ACCEPTED</th>
+    <tr>${tableEntries}</tr>
+</table> -->
