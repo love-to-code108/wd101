@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="h-[100vh]  w-[100vw] flex flex-col items-center justify-center">
+    
+
+
+        <!-- THIS DIV WRAPS AROUND THE FORM -->
+        <div id="formWrapper" class="w-3/5 h-3/5 bg-red-600 flex flex-col items-center justify-center">
+            <form action="">
+
+                <!--  -->
+                <div class=" flex px-4 py-4 justify-center">
+                    <label class="px-1 py-1 mx-4 text-3xl" for="Name">Name</label>
+                    <input class="px-1 py-1 text-xl" required type="text" name="userName" id="Name">
+                </div>
+
+                <!--  -->
+                <div class="flex px-4 py-4 justify-center">
+                    <label for="Email">Email</label>
+                    <input type="email" name="userEmail" id="Email">
+                </div>
+
+                <!--  -->
+                <div class="flex px-4 py-4 justify-center">
+                    <label for="Password">Password</label>
+                    <input type="password" name="userPassword" id="Password">
+                </div>
+
+                <!--  -->
+                <div class="flex px-4 py-4 justify-center">
+                    <label for="DOB">Date </label>
+                    <input type="date" name="userDOB" id="DOB">
+                </div>
+
+                <!--  -->
+                <div class="flex px-4 py-4 justify-center">
+                    <label for="TermsAndCondition"></label>
+                    <input type="checkbox" name="userT&C" id="TermsAndCondition">
+                </div>
+                
+                <!--  -->
+                <div class="flex px-4 py-4 justify-center">
+                    <button type="submit">Submit</button>
+                </div>
+
+
+
+            </form>
+
+
+        </div>
+
+    
+</body>
+</html>
