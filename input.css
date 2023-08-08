@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.InputFields{
+    width: 50rem;
+    height: 4rem;
+}
+
+.InputWrapper{
+    margin-top: 5rem;
+    width: 60rem;
+    height: 40rem;
+
+    border-radius: 1rem;
+}

@@ -38,7 +38,7 @@ const displayUserEntry = () => {
         const EmailCell = `<td class=" px-4 py-4 ">${entry.Email}</td>`;
         const PasswordCell = `<td class=" px-4 py-4 ">${entry.Password}</td>`;
         const DOBCell = `<td class=" px-4 py-4 ">${entry.DOB}</td>`;
-        const TermsAndConditionCell = `<td px-4>${entry.TermsAndCondition}</td>`;
+        const TermsAndConditionCell = `<td class=" px-4">${entry.TermsAndCondition}</td>`;
 
 
         // CREATING THE TABLE ROW HERE
@@ -56,11 +56,11 @@ const displayUserEntry = () => {
 
     // THE TABLE THAT IS TO BE FILLED WITH USER DATA AND THEN SHOWN
     const table = `<table>
-    <th class="px-4 py-4">NAME</th>
-    <th class="px-4 py-4">EMAIL</th>
-    <th class="px-4 py-4">PASSWORD</th>
-    <th class="px-4 py-4">DOB</th>
-    <th class="px-4 py-4">ACCEPTED</th>
+    <th class="px-4 py-4">Name</th>
+    <th class="px-4 py-4">Email</th>
+    <th class="px-4 py-4">Password</th>
+    <th class="px-4 py-4">Dob</th>
+    <th class="px-4 py-4">Accepted terms?</th>
     <tr>${tableEntries}</tr>
     </table>`
 
